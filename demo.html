@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>JS Task</title>
+<script src="task.js">
+    
+ 
+</script>
+</head>
+<style>
+body{
+    background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(180,19,126,1) 37%, rgba(0,212,255,1) 100%); 
+}
+h2{
+    text-align: center;
+    color: white;
+    font-style: italic;
+    font-size: 40px;
+    margin-right: 30px;
+    margin-top: 30px;
+    
+}
+form{
+    width: 450px;
+    height: 380px;
+    background: linear-gradient(to top, rgba(17, 17, 17, 0.137)50%,rgba(0, 0, 0, 0.13)50%);
+    position: absolute;
+    margin-bottom: 20px;
+    margin-top: 50px;
+    margin-left: 380px;
+    transform: translate(0%,-5%);
+    border: 1px solid whitesmoke;
+    padding: 5px;
+    box-shadow: 2px 5px 3px #b7c2c4;
+    border-radius: 15px;
+}
+input{
+    margin-top: 50px;
+    margin-bottom: 10px;
+    background: linear-gradient(to top, rgba(17, 17, 17, 0.137)50%,rgba(0, 0, 0, 0.13)50%);
+    border-color:  white;
+    color: white;
+} 
+label{
+    margin-left: 100px;
+    color: white;
+    font-weight: bold;
+}
+select{
+    margin-top: 20px;
+    margin-left: 50px;
+    background: linear-gradient(to top, rgba(17, 17, 17, 0.137)50%,rgba(0, 0, 0, 0.13)50%);
+    box-shadow: 0px 0px 3px 3px rgb(230, 194, 230);
+    color: white;
+}
+
+button{
+    position: absolute;
+    background-color:#000069;
+    color: #fff;
+    border:none;
+    border-radius:15px;
+    box-shadow: 0px 0px 3px 3px rgb(71, 108, 143);
+    margin-top: 20px;
+    margin-left: 170px;
+    font-size: 20px;
+
+}
+
+</style>
+<body>
+    <h2>Javascript Task</h2>
+<form>
+    <label for="num1">Enter first number</label>
+    <input type="number" name="firstvar" id="num1" style="width: 50px;"><br><br><br>
+    <label for="operator"> </label>
+    <select name="operator" id="operator">
+        <option>Select an operator</option>
+        <option value="add">+</option>
+        <option value="sub">-</option>
+        <option value="mul">*</option>
+        <option value="divide">/</option>
+    </select><br><br>
+    <label for="num2">Enter second number</label>
+    <input type="number" name="secondvar" id="num2" style="width: 50px;"><br><br>
+    <button name="button" value="OK" type="button" onclick="calc()">Calculate</button>
+    <p><div id="result"></p>
+</form>
+</body>
+</html>
